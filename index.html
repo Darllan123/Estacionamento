@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento</title>
+    <style>
+body{
+    background-color: rgb(181, 192, 243);
+    
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.carro{
+    width: 700px;
+    height: 300px;
+    margin-top: 15px;
+    margin-left: 300px;
+}
+.section{
+    display: flex;
+margin-left: 150px;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 100px;
+    
+}
+#nome{
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 350px;
+    height: 20px;
+    
+}
+
+#placa{
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 250px;
+    height: 20px;
+}
+
+#cadastrar{
+    height: 25px;
+}
+
+.section2{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: baseline;
+height: 500px;
+}
+
+.th1{
+width: 300px;
+
+border: solid 2px black;
+background-color: gold;
+
+}
+
+.th2{
+    border: solid 2px black;
+width: 250px;
+    background-color: chocolate;
+}
+.th3{
+    border: solid 2px black;
+width: 250px;
+background-color: lime;
+}
+
+.th4{
+    border: solid 2px black;
+width: 30px;
+background-color: crimson;
+
+}
+    </style>
+</head>
+<body>
+    <header id="header">
+
+    <h1> Sistema de entrada e saida do Estacionamento</h1>
+
+    </header>
+         <img class="carro"  src="carro.jpg" alt="Fotot de carro">
+    <section class="section">
+    <input type="text" id="nome" placeholder="Digite o nome do veículo">
+    <input type="text" id="placa" placeholder="Digite a placa do veículo">
+    <button id="cadastrar">cadastrar</button>
+</section>
+<section class="section2">
+<table>
+    <thead >
+    <tr >
+    <th class="th1">Nome</th>
+    <th class="th2">Placa</th>
+    <th class="th3">Entrada</th>
+    <th class="th4">Saída</th>
+    </tr>
+    </thead>
+    <tbody id="patio"></tbody>
+</table>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
